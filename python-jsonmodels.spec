@@ -385,6 +385,7 @@ PYTHONPATH=$(pwd) %{__python3} setup.py test
 Summary: Models to make easier to deal with structures that are converted to, or read from JSON.
 
 BuildRequires: python-dateutil
+BuildRequires: python2-devel
 BuildRequires: python-invoke
 BuildRequires: python2-pytest
 BuildRequires: python-pytest-cov
@@ -407,6 +408,7 @@ Python 2 package for jsonmodels
 Summary: Models to make easier to deal with structures that are converted to, or read from JSON.
 
 BuildRequires: python3-dateutil
+BuildRequires: python3-devel
 BuildRequires: python3-invoke
 BuildRequires: python3-pytest
 BuildRequires: python3-pytest-cov
