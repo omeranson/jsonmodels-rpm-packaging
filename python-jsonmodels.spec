@@ -7,8 +7,8 @@ Summary: Models to make easier to deal with structures that are converted to, or
 Name: %{name}
 Version: %{version}
 Release: %{release}
-#Source0: https://github.com/beregond/%{name}/archive/%{unmangled_version}.tar.gz
-Source0:        https://files.pythonhosted.org/packages/source/j/%{name}/%{name}-%{version}.tar.gz
+Source0: https://github.com/beregond/%{name}/archive/%{unmangled_version}.tar.gz
+#Source0:        https://files.pythonhosted.org/packages/source/j/%{name}/%{name}-%{version}.tar.gz
 License: BSD
 Group: Development/Libraries
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -16,6 +16,9 @@ Prefix: %{_prefix}
 BuildArch: noarch
 Vendor: Szczepan Cieślik <szczepan.cieslik@gmail.com>
 Url: https://github.com/beregond/jsonmodels
+
+BuildRequires: python2-devel
+BuildRequires: python3-devel
 
 %description
 ===========
@@ -385,7 +388,6 @@ PYTHONPATH=$(pwd) %{__python3} setup.py test
 Summary: Models to make easier to deal with structures that are converted to, or read from JSON.
 
 BuildRequires: python-dateutil
-BuildRequires: python2-devel
 BuildRequires: python-invoke
 BuildRequires: python2-pytest
 BuildRequires: python-pytest-cov
@@ -408,7 +410,6 @@ Python 2 package for jsonmodels
 Summary: Models to make easier to deal with structures that are converted to, or read from JSON.
 
 BuildRequires: python3-dateutil
-BuildRequires: python3-devel
 BuildRequires: python3-invoke
 BuildRequires: python3-pytest
 BuildRequires: python3-pytest-cov
