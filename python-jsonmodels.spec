@@ -7,7 +7,8 @@ Summary: Models to make easier to deal with structures that are converted to, or
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: https://github.com/beregond/%{name}/archive/%{unmangled_version}.tar.gz
+#Source0: https://github.com/beregond/%{name}/archive/%{unmangled_version}.tar.gz
+Source0: https://files.pythonhosted.org/packages/source/j/jsonmodels/jsonmodels-2.2.tar.gz
 License: BSD
 Group: Development/Libraries
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
